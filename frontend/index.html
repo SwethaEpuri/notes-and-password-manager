@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="nav-register">Register</a></li>
+            <li><a href="#" id="nav-login">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="form-container" id="register-form-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Name" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div class="form-container" id="login-form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="home-container" id="home-container">
+            <h2>Home</h2>
+            <button id="fetch-employees">Fetch Employees</button>
+            <ul id="employee-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="card.css">
+    
+    
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+
+    <div class="home-container">
+        <h1>NP Vault</h1>
+        <button class="manager-button" onclick="location.href='notes.html'">Notes Manager</button>
+        <button class="manager-button" onclick="location.href='password.html'">Password Manager</button>
+    </div>
+   
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+    
+</body>
+
+</html>
